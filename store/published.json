@@ -1,43 +1,133 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "app_id": "4b8887048b0f4b89a07ed816",
   "store_url": "https://apps.repebble.com/4b8887048b0f4b89a07ed816",
   "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
   "visible": true,
   "is_published": true,
   "has_pbw": true,
-  "published_date": "2026-10-22T21:03:34.391",
-  "release_notes": "New installations now default to an 8,000-step daily goal. Existing saved step goals are preserved. Includes the latest shared watchface kit.",
+  "published_date": "2026-10-22T21:27:03.788",
+  "release_notes": "Consistent temperature rounding and handling of unavailable sun times. Shared time, forecast and activity helpers improve consistency across watchfaces. New installations default to an 8,000-step goal; existing saved goals are preserved.",
   "gallery_counts": {
     "emery": 2
   },
   "screenshots_unchanged": true,
-  "kit_version": "2.1.2",
-  "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
-  "source_revision": "dde527f8104bbf7c6fb8c99e25568d19acee3193",
-  "local_pbw_sha256": "ef6aa5f1d7fdea67d60aec9ff22302c3f08f517bb9391421e5de7ca6cbeec843",
+  "kit_version": "2.2.0",
+  "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
+  "source_revision": "e6e2dc22df1ed98744c8ba9aaac4ca1025db0635",
+  "local_pbw_sha256": "538a8f51ffe3306f4ba17975bd42c92d635e086eb11d6df043628ccd1395f741",
   "release_build_provenance": {
-    "created_utc": "2026-10-22T21:02:48.363380+00:00",
+    "created_utc": "2026-10-22T21:26:12.753972+00:00",
     "app": "pebble-quest",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
-    "app_revision": "dde527f8104bbf7c6fb8c99e25568d19acee3193",
+    "app_revision": "e6e2dc22df1ed98744c8ba9aaac4ca1025db0635",
     "app_modified": false,
-    "kit_version": "2.1.2",
-    "kit_revision": "71a935de2c9554d8fa29570ceece633b7bd0214a",
+    "kit_version": "2.2.0",
+    "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
     "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
-    "pbw_sha256": "ef6aa5f1d7fdea67d60aec9ff22302c3f08f517bb9391421e5de7ca6cbeec843",
+    "pbw_sha256": "538a8f51ffe3306f4ba17975bd42c92d635e086eb11d6df043628ccd1395f741",
     "scenario": 3,
     "touch_window_ms": 0,
     "tests_passed": true,
     "renders_checked": true
   },
   "runtime_default_verification": {
-    "app": "pebble-quest",
     "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
-    "fresh_default": 8000,
-    "persisted_goal_verified": 12500,
-    "no_faults": true
+    "fresh_default_goal": 8000,
+    "saved_goal_after_restart": 12500,
+    "synthetic_weather": true,
+    "weather_reply_count": 1,
+    "report": {
+      "frames": [
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 16
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 22
+        },
+        {
+          "view": "face",
+          "wall_ms": 14
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 20
+        },
+        {
+          "view": "detail",
+          "wall_ms": 18
+        },
+        {
+          "view": "face",
+          "wall_ms": 21
+        }
+      ],
+      "clock_discontinuity_candidates": [],
+      "faults": [],
+      "starts": [
+        "2.2.0",
+        "2.2.0",
+        "2.2.0"
+      ],
+      "exits": [
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        }
+      ],
+      "weather_acceptances": 1
+    }
   },
   "verification": "Authenticated store record confirms the expected existing app, visible published version, PBW and retained gallery. Local release hash is unchanged after the publish build."
 }
