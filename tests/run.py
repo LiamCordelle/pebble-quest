@@ -1,6 +1,7 @@
 from pathlib import Path
 import subprocess,sys
 root=Path(__file__).resolve().parents[1]
+(root/'build').mkdir(exist_ok=True)
 subprocess.run([sys.executable,str(root/'shared-kit/tests/run.py')],check=True)
 subprocess.run(['node','tests/consumer.test.js'],cwd=root,check=True)
 

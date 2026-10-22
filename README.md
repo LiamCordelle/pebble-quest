@@ -55,7 +55,7 @@ uses tomorrow's sunrise; absent polar sun events show `SUN --`.
 ## Settings and live data
 
 Clay settings: time format (watch/12/24), Celsius/Fahrenheit, goal (default
-10,000), second zone (NZ/UTC/LON/NYC/LA/TKY/SYD), weather, optional health demo
+8,000), second zone (NZ/UTC/LON/NYC/LA/TKY/SYD), weather, optional health demo
 fallback (off by default), and Hero name. Names accept eight ASCII letters,
 numbers or spaces; unsupported characters are removed, letters capitalized,
 and blank names fall back to LIAM. Changes apply live and persist.

@@ -1,4 +1,5 @@
 #include "lab.h"
+#include "kit/kit_core.h"
 #include "quest_settings.h"
 #ifdef LAB_HOST_RENDER
 #include <stdio.h>
@@ -478,7 +479,7 @@ static void draw_area_window(GContext *ctx, GRect w, const LabData *d) {
 }
 
 static int goal_days(const LabData *d) {
-  int result=0; int goal=d->step_goal>0?d->step_goal:10000;
+  int result=0; int goal=d->step_goal>0?d->step_goal:KIT_DEFAULT_STEP_GOAL;
   for(int i=0;i<28;i++) if(d->steps_by_day[i]>=goal) result++;
   return result;
 }
@@ -490,7 +491,7 @@ static void status_chip(GContext *ctx,const char *text,int right,int cap_y,GColo
 static void draw_status_window(GContext *ctx,GRect w,const LabData *d) {
   int y=w.origin.y+10; char value[24];
   put(ctx,quest_hero_name(),QS16,COL_L,y,Q_WHITE);
-  if(d->steps_ok) snprintf(value,sizeof(value),"LV %d",lab_clamp(1+(int)((int64_t)d->steps*10/(d->step_goal>0?d->step_goal:10000)),1,99));
+  if(d->steps_ok) snprintf(value,sizeof(value),"LV %d",lab_clamp(1+(int)((int64_t)d->steps*10/(d->step_goal>0?d->step_goal:KIT_DEFAULT_STEP_GOAL)),1,99));
   else snprintf(value,sizeof(value),"LV --");
   put_r(ctx,value,QS16,COL_R,y,Q_LABEL);
   int pct=lab_clamp(d->battery_pct,0,100);

@@ -67,3 +67,11 @@ confirms the release is listed and published for Emery, with a PBW and both
 approved screenshots. Source and kit commit provenance is in
 `store/release-1.0.1-provenance.json`; publication metadata is in
 `store/published.json`.
+
+## 8,000-step default — 22 October 2026
+
+Updated to shared kit 2.1.2 (`71a935d`). Fresh watch/phone settings and
+face fallbacks use 8,000 steps. Valid saved goals are preserved. Protocol keys,
+persistence layouts and explicit screenshot fixtures are unchanged. Shared and
+consumer tests, all five render suites and fresh-profile QEMU checks cover the
+new default and a saved 12,500-step goal across explicit stop/start.
