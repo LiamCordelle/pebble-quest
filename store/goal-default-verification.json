@@ -1,0 +1,7 @@
+{
+  "app": "pebble-quest",
+  "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+  "fresh_default": 8000,
+  "persisted_goal_verified": 12500,
+  "no_faults": true
+}
