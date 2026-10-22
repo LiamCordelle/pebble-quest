@@ -1,0 +1,293 @@
+[
+  {
+    "name": "demo",
+    "scenario": 0,
+    "overrides": {}
+  },
+  {
+    "name": "stress",
+    "scenario": 1,
+    "overrides": {}
+  },
+  {
+    "name": "empty",
+    "scenario": 2,
+    "overrides": {}
+  },
+  {
+    "name": "12h",
+    "scenario": 0,
+    "overrides": {
+      "12H": 1
+    }
+  },
+  {
+    "name": "12h-midnight",
+    "scenario": 0,
+    "overrides": {
+      "12H": 1,
+      "HOUR": 0,
+      "MINUTE": 1
+    }
+  },
+  {
+    "name": "12h-evening",
+    "scenario": 0,
+    "overrides": {
+      "12H": 1,
+      "HOUR": 23,
+      "MINUTE": 59
+    }
+  },
+  {
+    "name": "midnight",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 0,
+      "MINUTE": 1
+    }
+  },
+  {
+    "name": "after-sunset",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 20,
+      "MINUTE": 48
+    }
+  },
+  {
+    "name": "phone-lost",
+    "scenario": 0,
+    "overrides": {
+      "PHONE": 0
+    }
+  },
+  {
+    "name": "low-battery",
+    "scenario": 0,
+    "overrides": {
+      "BATTERY": 5
+    }
+  },
+  {
+    "name": "charging",
+    "scenario": 0,
+    "overrides": {
+      "CHARGING": 1
+    }
+  },
+  {
+    "name": "no-health",
+    "scenario": 0,
+    "overrides": {
+      "NO_HEALTH": 1
+    }
+  },
+  {
+    "name": "partial-range",
+    "scenario": 0,
+    "overrides": {
+      "HR_PARTIAL": 1
+    }
+  },
+  {
+    "name": "no-range",
+    "scenario": 0,
+    "overrides": {
+      "NO_RANGE": 1
+    }
+  },
+  {
+    "name": "fahrenheit",
+    "scenario": 0,
+    "overrides": {
+      "FAHRENHEIT": 1
+    }
+  },
+  {
+    "name": "hero8",
+    "scenario": 0,
+    "overrides": {
+      "HERO_NAME": "WIZARD99"
+    }
+  },
+  {
+    "name": "tomorrow-rain",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 22,
+      "CROSS_MIDNIGHT": 1
+    }
+  },
+  {
+    "name": "tomorrow-rain-12h",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 22,
+      "12H": 1,
+      "CROSS_MIDNIGHT": 1
+    }
+  },
+  {
+    "name": "no-sun",
+    "scenario": 0,
+    "overrides": {
+      "NO_SUN": 1
+    }
+  },
+  {
+    "name": "goal",
+    "scenario": 0,
+    "overrides": {
+      "STEPS": 18765,
+      "DRY": 1
+    }
+  },
+  {
+    "name": "high-uv",
+    "scenario": 0,
+    "overrides": {
+      "UV": 110,
+      "DRY": 1
+    }
+  },
+  {
+    "name": "rest",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 8,
+      "DRY": 1
+    }
+  },
+  {
+    "name": "no-rain",
+    "scenario": 0,
+    "overrides": {
+      "DRY": 1
+    }
+  },
+  {
+    "name": "wide-stats",
+    "scenario": 0,
+    "overrides": {
+      "ACTIVE": 1440,
+      "DISTANCE": 123456,
+      "SLEEP": 1439,
+      "HR_MIN": 110,
+      "HR_MAX": 255,
+      "HR_PARTIAL": 1
+    }
+  },
+  {
+    "name": "sun-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 0,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "sun-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 0,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "partly-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 2,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "partly-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 2,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "cloud-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 3,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "cloud-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 3,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "rain-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 63,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "rain-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 63,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "snow-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 73,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "snow-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 73,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "storm-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 95,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "storm-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 95,
+      "HOUR": 23
+    }
+  },
+  {
+    "name": "fog-day",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 45,
+      "HOUR": 10
+    }
+  },
+  {
+    "name": "fog-night",
+    "scenario": 0,
+    "overrides": {
+      "WEATHER_CODE": 45,
+      "HOUR": 23
+    }
+  }
+]

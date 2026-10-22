@@ -1,0 +1,7 @@
+Turn your day into a pixel RPG status screen.
+
+Quest pairs a bold pixel clock with dithered blue windows, battery HP, step XP and useful weather advice. Tap the screen or flick your wrist to open your character sheet: heart-rate range, active minutes, distance, sleep, goal days, rain timing and your second time zone.
+
+Name your hero with up to eight characters. Choose 12/24-hour time, Celsius or Fahrenheit, a step goal and a second time zone. Weather and optional demo health fallback are configurable.
+
+Built for Pebble Time 2. Updates once a minute, with no continuous animation. Health data needs permission; weather needs the paired phone and location access. Weather data provided by Open-Meteo.

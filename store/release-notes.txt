@@ -1,0 +1,1 @@
+Initial public release of Quest for Pebble Time 2. Includes configurable hero name, live health and weather, HP/XP gauges and a tap-open character sheet.

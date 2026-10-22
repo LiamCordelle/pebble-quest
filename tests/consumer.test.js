@@ -1,0 +1,13 @@
+'use strict';
+var assert=require('assert'),options=require('../src/pkjs/app-config');
+var make=require('../src/pkjs/kit/settings'),config=require('../src/pkjs/kit/config');
+var settings=make(options),pkg=require('../package.json');
+assert.strictEqual(options.heading,'Quest');assert.strictEqual(options.storageKey,'quest-kit-settings-v1');
+assert.strictEqual(config(options).reduce(function(items,section){return items.concat(section.items||[]);},[]).filter(function(i){return i.messageKey==='HERO_NAME';}).length,1);
+[['liam','LIAM'],['abcdefghij','ABCDEFGH'],['  ! ','LIAM'],['Álice 🧙','LICE'],['a-b_9','AB9'],['A B','A B']].forEach(function(v){assert.strictEqual(settings.normalize({HERO_NAME:v[0]}).HERO_NAME,v[1]);});
+assert.strictEqual(settings.normalize({}).HERO_NAME,'LIAM');
+assert.deepStrictEqual(pkg.pebble.messageKeys,['READY','REQUEST_WEATHER','WEATHER_ID','WEATHER','WEATHER_ERROR','TIME_MODE','TEMP_UNIT','STEP_GOAL','WORLD','WEATHER_ENABLED','DEMO_FALLBACK','LARGE_LABELS','HERO_NAME']);
+var memory={},store={getItem:function(k){return memory[k]||null;},setItem:function(k,v){memory[k]=v;}};
+settings.save(store,{HERO_NAME:'wizard99',TEMP_UNIT:1});assert.strictEqual(settings.load(store).HERO_NAME,'WIZARD99');
+assert.strictEqual(settings.load(store).TEMP_UNIT,1);
+console.log('Quest settings and message-key compatibility passed.');

@@ -1,0 +1,44 @@
+[21:39:35] kit_shell.c:129> Watchface kit 2.1.1 started (scenario 3, touch window 0ms)
+[21:39:35] kit_shell.c:27> Frame face 11ms
+[21:39:35] kit_weather.c:38> Weather request 1792701576
+[21:39:35] kit_shell.c:27> Frame face 8ms
+[21:39:36] it_hr_history.c:60> HR minute history ready: data=0 partial=1
+[21:39:36] kit_shell.c:27> Frame face 7ms
+[21:39:37] kit_settings.c:50> Kit settings applied: time=2 unit=0 goal=10000 world=0 weather=0 demo=0
+[21:39:37] kit_shell.c:27> Frame face 15ms
+[21:39:49] kit_shell.c:27> Frame detail 19ms
+[21:39:51] kit_shell.c:27> Frame face 17ms
+[21:39:53] kit_shell.c:27> Frame detail 17ms
+[21:40:00] it_hr_history.c:60> HR minute history ready: data=1 partial=1
+[21:40:00] kit_shell.c:27> Frame detail 19ms
+[21:40:01] kit_shell.c:27> Frame face 28ms
+[21:40:04] kit_settings.c:50> Kit settings applied: time=1 unit=1 goal=10000 world=0 weather=0 demo=0
+[21:40:04] uest_settings.c:34> Hero name applied: WIZARD99
+[21:40:04] kit_shell.c:27> Frame face 6ms
+[21:40:07] kit_settings.c:50> Kit settings applied: time=1 unit=1 goal=10000 world=0 weather=1 demo=0
+[21:40:07] kit_weather.c:38> Weather request 1792701577
+[21:40:07] kit_shell.c:27> Frame face 6ms
+[21:40:07] kit_weather.c:93> Weather snapshot accepted (48 hours)
+[21:40:07] kit_shell.c:27> Frame face 6ms
+[21:40:11] kit_shell.c:27> Frame detail 17ms
+[21:40:14] kit_shell.c:27> Frame face 10ms
+[21:40:15] ocess_manager.c:487> Heap Usage for App <Quest>: Total Size <108720B> Used <3156B> Still allocated <0B>
+[21:40:16] kit_shell.c:129> Watchface kit 2.1.1 started (scenario 3, touch window 0ms)
+[21:40:17] kit_shell.c:27> Frame face 1010ms
+[21:40:17] kit_shell.c:27> Frame face 8ms
+[21:40:17] kit_weather.c:38> Weather request 1792701617
+[21:40:17] kit_shell.c:27> Frame face 16ms
+[21:40:17] it_hr_history.c:60> HR minute history ready: data=1 partial=1
+[21:40:21] kit_shell.c:27> Frame face 7ms
+[21:40:23] kit_shell.c:27> Frame face 10ms
+[21:40:49] kit_shell.c:27> Frame face 15ms
+[21:40:54] kit_shell.c:27> Frame face 17ms
+[21:40:56] kit_settings.c:50> Kit settings applied: time=2 unit=0 goal=10000 world=0 weather=1 demo=0
+[21:40:56] uest_settings.c:34> Hero name applied: LIAM
+[21:40:56] kit_shell.c:27> Frame face 18ms
+[21:40:57] kit_shell.c:27> Frame face 13ms
+[21:40:59] kit_shell.c:27> Frame detail 12ms
+[21:41:00] kit_shell.c:27> Frame detail 12ms
+[21:41:00] it_hr_history.c:60> HR minute history ready: data=1 partial=1
+[21:41:01] kit_shell.c:27> Frame face 12ms
+[21:41:02] ocess_manager.c:487> Heap Usage for App <Quest>: Total Size <108720B> Used <3156B> Still allocated <0B>
