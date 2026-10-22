@@ -1,4 +1,5 @@
 #include "lab.h"
+#include "kit/kit_calc.h"
 #include "kit/kit_core.h"
 #include "quest_settings.h"
 #ifdef LAB_HOST_RENDER
@@ -407,7 +408,7 @@ static void draw_time_window(GContext *ctx, GRect w, const LabData *d) {
 // --- Area (weather) --------------------------------------------------------------
 
 static bool is_night(const LabData *d) {
-  return d->minute_of_day < d->sunrise_min || d->minute_of_day >= d->sunset_min;
+  return kit_daylight_state(d->weather_ok,d->minute_of_day,d->sunrise_min,d->sunset_min)==KitDaylightNight;
 }
 
 
@@ -460,7 +461,7 @@ static void draw_area_window(GContext *ctx, GRect w, const LabData *d) {
   draw_weather_icon(ctx,d,COL_L,w.origin.y+8);
   put(ctx,condition(d),QS16,42,w.origin.y+6,color);
   if (d->weather_ok) {
-    int t=d->temp_fahrenheit ? (d->temp*9+(d->temp>=0?2:-2))/5+32 : d->temp;
+    int t=d->temp_fahrenheit ? kit_temperature(d->temp,true) : d->temp;
     snprintf(temp,sizeof(temp),"%d",t);
     snprintf(rain,sizeof(rain),"%d%%",lab_clamp(d->rain_pct,0,100));
     snprintf(uv,sizeof(uv),"UV %d",is_night(d)?0:lab_clamp((d->uv_x10+5)/10,0,99));
@@ -479,9 +480,7 @@ static void draw_area_window(GContext *ctx, GRect w, const LabData *d) {
 }
 
 static int goal_days(const LabData *d) {
-  int result=0; int goal=d->step_goal>0?d->step_goal:KIT_DEFAULT_STEP_GOAL;
-  for(int i=0;i<28;i++) if(d->steps_by_day[i]>=goal) result++;
-  return result;
+  return kit_goal_days(d->steps_by_day,28,d->step_goal>0?d->step_goal:KIT_DEFAULT_STEP_GOAL);
 }
 static void status_chip(GContext *ctx,const char *text,int right,int cap_y,GColor color) {
   int width=ink_w(text,QS16)+8, x=right-width;
@@ -519,13 +518,10 @@ static void draw_status_window(GContext *ctx,GRect w,const LabData *d) {
 
 // Compact event clocks carry AM/PM and tomorrow explicitly, without a second local clock.
 static void event_time(char *out,size_t n,int hour,int minute,bool h24,int delta) {
-  if(h24) snprintf(out,n,"%02d:%02d%s",hour,minute,delta>0?"+1":"");
-  else snprintf(out,n,"%d:%02d%c%s",hour%12?hour%12:12,minute,hour<12?'A':'P',delta>0?"+1":"");
+  kit_format_event_time(out,n,hour*60+minute,h24,delta,KitMeridiemCompact);
 }
 static int next_wet(const LabData *d) {
-  if(!d->weather_ok)return -1;
-  for(int i=1;i<d->rolling_count && i<24;i++) if(d->rolling_rain[i]>=50)return i;
-  return -1;
+  return d->weather_ok ? kit_forecast_rain_next(d->rolling_rain,d->rolling_count,1,50) : -1;
 }
 static void rain_line(const LabData *d,char *out,size_t n) {
   if(!d->weather_ok) {snprintf(out,n,"RAIN --");return;}

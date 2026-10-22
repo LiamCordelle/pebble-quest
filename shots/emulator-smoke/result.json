@@ -1,0 +1,97 @@
+{
+  "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+  "fresh_default_goal": 8000,
+  "saved_goal_after_restart": 12500,
+  "synthetic_weather": true,
+  "weather_reply_count": 1,
+  "report": {
+    "frames": [
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 16
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 22
+      },
+      {
+        "view": "face",
+        "wall_ms": 14
+      },
+      {
+        "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 20
+      },
+      {
+        "view": "detail",
+        "wall_ms": 18
+      },
+      {
+        "view": "face",
+        "wall_ms": 21
+      }
+    ],
+    "clock_discontinuity_candidates": [],
+    "faults": [],
+    "starts": [
+      "2.2.0",
+      "2.2.0",
+      "2.2.0"
+    ],
+    "exits": [
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      }
+    ],
+    "weather_acceptances": 1
+  }
+}

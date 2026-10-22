@@ -129,3 +129,11 @@ samples wrapped after backwards clock steps. Raw samples remain in
 `shots/emulator/result.json` and the log. These are emulator wall times, not
 physical-watch CPU measurements. Physical timing and touch power remain checks
 for Liam's Time 2; do not allocate a frame cache based solely on these samples.
+
+## Shared behaviour maintenance
+
+This release uses kit 2.2.0 for shared data and calculations.
+Artwork and explicit render fixtures remain face-owned. Run
+`tools/emulator_smoke.py` with pebble-tool's Python for common runtime checks;
+local emulator/visual checkers retain the face-specific assertions.
+The published 8,000-step-default release is recorded in store/published.json.
