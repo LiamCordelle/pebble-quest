@@ -1,0 +1,28 @@
+Appstore auth preflight...
+API base: https://appstore-api.repebble.com
+Developer link check successful.
+Building app...
+App build successful.
+PBW Metadata
+Using PBW: /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-quest/build/pebble-quest.pbw
+PBW app UUID: ae6bc50d-f318-4af3-af69-c65619f4108e
+Name: Quest
+PBW Version: 1.0.1
+Publish Version: 1.0.1
+Platforms: emery
+No existing app mapping for UUID ae6bc50d-f318-4af3-af69-c65619f4108e. Creating a new app...
+Publishing new app to Pebble Appstore...
+
+Waiting for app create response (icon generation may take ~2 min) [                        ]   0s
+Waiting for app create response (icon generation may take ~2 min) [=                       ]   0s
+Waiting for app create response (icon generation may take ~2 min) [==                      ]   0s
+Waiting for app create response (icon generation may take ~2 min) [===                     ]   1s
+Waiting for app create response (icon generation may take ~2 min) [====                    ]   1s
+Waiting for app create response (icon generation may take ~2 min) [=====                   ]   1s
+Waiting for app create response (icon generation may take ~2 min) [======                  ]   1s
+Waiting for app create response (icon generation may take ~2 min) [=======                 ]   2s
+Waiting for app create response (icon generation may take ~2 min) [========                ]   2s
+Waiting for app create response (icon generation may take ~2 min) [========================]   2s
+App submitted successfully
+Visit the dashboard to add/edit your changelog: https://appstore-api.repebble.com/dashboard
+App page: https://apps.rePebble.com/4b8887048b0f4b89a07ed816

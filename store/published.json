@@ -1,0 +1,33 @@
+{
+  "version": "1.0.1",
+  "app_id": "4b8887048b0f4b89a07ed816",
+  "store_url": "https://apps.repebble.com/4b8887048b0f4b89a07ed816",
+  "source_url": "https://github.com/LiamCordelle/pebble-quest",
+  "visible": true,
+  "is_published": true,
+  "has_pbw": true,
+  "gallery_count": 2,
+  "published_date": "2026-10-22T20:43:47.663",
+  "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+  "source_revision": "a03014ef05080a4d4ba615da896b87daab1ab980",
+  "kit_revision": "0890f40ae56e8b08da6c3e3985fd3d1eb8ea0fef",
+  "kit_version": "2.1.1",
+  "local_pbw_sha256": "17fdd2414300bf68bedad415f02906617b85214afaf1709dabefb921771ab65a",
+  "release_build_provenance": {
+    "created_utc": "2026-10-22T20:43:07.609240+00:00",
+    "app": "pebble-quest",
+    "version": "1.0.1",
+    "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+    "app_revision": "a03014ef05080a4d4ba615da896b87daab1ab980",
+    "app_modified": false,
+    "kit_version": "2.1.1",
+    "kit_revision": "0890f40ae56e8b08da6c3e3985fd3d1eb8ea0fef",
+    "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
+    "pbw_sha256": "17fdd2414300bf68bedad415f02906617b85214afaf1709dabefb921771ab65a",
+    "scenario": 3,
+    "touch_window_ms": 0,
+    "tests_passed": true,
+    "renders_checked": true
+  },
+  "verification": "Authenticated store account record confirms a listed, published Emery release with PBW and two screenshots."
+}

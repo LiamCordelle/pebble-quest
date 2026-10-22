@@ -3,6 +3,8 @@
 A standalone Pebble Time 2 watchface: your day as a pixel RPG status screen.
 App version 1.0.1. Emery only, 200×228, minute updates, no animation.
 
+[Install from the Pebble store](https://apps.repebble.com/4b8887048b0f4b89a07ed816).
+
 ![Quest face](shots/demo.png)
 ![Quest character sheet](shots/demo-detail.png)
 

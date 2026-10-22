@@ -60,3 +60,10 @@ cover defaults, types, maximum length, custom normalization, storage and Clay
 ready/save; older numeric consumers retain their settings and artwork.
 
 Release dependency pinned to `0890f40ae56e8b08da6c3e3985fd3d1eb8ea0fef` (kit 2.1.1), shared publicly before Quest's source commit.
+
+Published Quest 1.0.1 on 22 October 2026:
+https://apps.repebble.com/4b8887048b0f4b89a07ed816. The store account record
+confirms the release is listed and published for Emery, with a PBW and both
+approved screenshots. Source and kit commit provenance is in
+`store/release-1.0.1-provenance.json`; publication metadata is in
+`store/published.json`.
