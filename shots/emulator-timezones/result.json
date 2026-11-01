@@ -1,0 +1,288 @@
+{
+  "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+  "checks": [
+    "Fresh default goal 8000",
+    "Clay save and cold restart retain extended timezone and saved goal 12500",
+    "Live clock pixels match deterministic rendering",
+    "12h and 24h fractional/date boundaries",
+    "Clean exits and no runtime faults"
+  ],
+  "zones": [
+    {
+      "zone": "Asia/Tokyo",
+      "id": 5,
+      "format": 12
+    },
+    {
+      "zone": "Asia/Kolkata",
+      "id": 289,
+      "format": 24
+    },
+    {
+      "zone": "Asia/Dubai",
+      "id": 268,
+      "format": 24
+    },
+    {
+      "zone": "Europe/Moscow",
+      "id": 463,
+      "format": 24
+    },
+    {
+      "zone": "Asia/Kathmandu",
+      "id": 286,
+      "format": 12
+    },
+    {
+      "zone": "Pacific/Chatham",
+      "id": 533,
+      "format": 12
+    },
+    {
+      "zone": "Pacific/Kiritimati",
+      "id": 548,
+      "format": 24
+    },
+    {
+      "zone": "Zulu",
+      "id": 596,
+      "format": 24
+    }
+  ],
+  "report": {
+    "frames": [
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 4
+      },
+      {
+        "view": "face",
+        "wall_ms": 11
+      },
+      {
+        "view": "face",
+        "wall_ms": 18
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 18
+      },
+      {
+        "view": "detail",
+        "wall_ms": 14
+      },
+      {
+        "view": "detail",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 14
+      },
+      {
+        "view": "detail",
+        "wall_ms": 16
+      },
+      {
+        "view": "detail",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 13
+      },
+      {
+        "view": "face",
+        "wall_ms": 10
+      },
+      {
+        "view": "detail",
+        "wall_ms": 14
+      },
+      {
+        "view": "detail",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 19
+      },
+      {
+        "view": "detail",
+        "wall_ms": 15
+      },
+      {
+        "view": "detail",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 16
+      },
+      {
+        "view": "detail",
+        "wall_ms": 17
+      },
+      {
+        "view": "detail",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 13
+      },
+      {
+        "view": "detail",
+        "wall_ms": 18
+      },
+      {
+        "view": "detail",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "detail",
+        "wall_ms": 1013
+      },
+      {
+        "view": "detail",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 9
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 16
+      },
+      {
+        "view": "detail",
+        "wall_ms": 14
+      }
+    ],
+    "clock_discontinuity_candidates": [],
+    "faults": [],
+    "starts": [
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1",
+      "2.4.1"
+    ],
+    "exits": [
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      }
+    ],
+    "weather_acceptances": 1
+  }
+}

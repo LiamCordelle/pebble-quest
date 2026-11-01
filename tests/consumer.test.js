@@ -10,4 +10,12 @@ assert.deepStrictEqual(pkg.pebble.messageKeys,['READY','REQUEST_WEATHER','WEATHE
 var memory={},store={getItem:function(k){return memory[k]||null;},setItem:function(k,v){memory[k]=v;}};
 settings.save(store,{HERO_NAME:'wizard99',TEMP_UNIT:1});assert.strictEqual(settings.load(store).HERO_NAME,'WIZARD99');
 assert.strictEqual(settings.load(store).TEMP_UNIT,1);
+assert.strictEqual(options.fullTimezones,true);
+var displayItems=require('../src/pkjs/kit/config')(options)[1].items;
+assert.strictEqual(displayItems.find(function(item){return item.messageKey==='WORLD';}).options.length,597);
+assert(displayItems.some(function(item){return item.id==='kit-timezone-search';}));
+[0,3,6,268,289,596].forEach(function(zone){
+  settings.save(store,Object.assign(settings.load(store),{WORLD:zone}));
+  assert.strictEqual(settings.load(store).WORLD,zone);
+});
 console.log('Quest settings and message-key compatibility passed.');

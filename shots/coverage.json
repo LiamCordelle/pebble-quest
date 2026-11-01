@@ -289,5 +289,117 @@
       "WEATHER_CODE": 45,
       "HOUR": 23
     }
+  },
+  {
+    "name": "world-mumbai",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 289,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-mumbai-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 289,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-abu-dhabi",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 268,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-abu-dhabi-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 268,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-moscow",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 463,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-moscow-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 463,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-kathmandu",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 286,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-kathmandu-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 286,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-chatham",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 533,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-chatham-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 533,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-kiritimati",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 548,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-kiritimati-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 548,
+      "12H": 1
+    }
+  },
+  {
+    "name": "world-utc-minus12",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 400,
+      "12H": 0
+    }
+  },
+  {
+    "name": "world-utc-minus12-12h",
+    "scenario": 0,
+    "overrides": {
+      "WORLD": 400,
+      "12H": 1
+    }
   }
 ]

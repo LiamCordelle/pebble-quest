@@ -59,7 +59,11 @@ static const uint8_t STRESS_HR_BY_HOUR[24] = {
 // --- Shared calendar projection for fixed screenshot scenarios --------
 
 static void fill_world_time(LabData *d) {
+#ifdef LAB_HOST_RENDER
+  kit_world_fill(d,preview_int("QUEST_WORLD",0));
+#else
   kit_world_fill(d,0);
+#endif
 }
 
 
@@ -180,9 +184,11 @@ void lab_data_refresh(LabData *d) {
 #endif
   d->minute_of_day = d->now.tm_hour * 60 + d->now.tm_min;
 #ifdef LAB_HOST_RENDER
+  int original_minute=d->minute_of_day;
   d->now.tm_hour=preview_int("QUEST_HOUR",d->now.tm_hour)%24;
   d->now.tm_min=preview_int("QUEST_MINUTE",d->now.tm_min)%60;
   d->minute_of_day=d->now.tm_hour*60+d->now.tm_min;
+  d->epoch+=(d->minute_of_day-original_minute)*60;
   d->is_24h=!preview_int("QUEST_12H",!d->is_24h);
   d->large_labels=preview_int("QUEST_LARGE_LABELS",0);
   d->temp_fahrenheit=preview_int("QUEST_FAHRENHEIT",0);

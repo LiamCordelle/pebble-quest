@@ -19,6 +19,10 @@ for name,env in [
  scenes.append((name,0,env))
 for kind,code in [('sun',0),('partly',2),('cloud',3),('rain',63),('snow',73),('storm',95),('fog',45)]:
  for hour,period in [(10,'day'),(23,'night')]:scenes.append((kind+'-'+period,0,{'WEATHER_CODE':code,'HOUR':hour}))
+
+for name,zone in [('mumbai', 289), ('abu-dhabi', 268), ('moscow', 463), ('kathmandu', 286), ('chatham', 533), ('kiritimati', 548), ('utc-minus12', 400)]:
+ for h12 in (0,1):scenes.append(('world-'+name+('-12h' if h12 else ''),0,{'WORLD':zone,'12H':h12}))
+
 for name,scenario,values in scenes:
  env=os.environ.copy();env.update({'QUEST_'+k:str(v) for k,v in values.items()})
  for detail in (False,True):

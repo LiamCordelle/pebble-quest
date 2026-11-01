@@ -21,7 +21,7 @@ pebble install --cloudpebble
 
 Output: `build/pebble-quest.pbw`. The project has its own UUID and no runtime
 coupling to another watchface. It uses the same shared-kit dependency and
-source symlinks as Mondrian and Underground. See [KIT.md](KIT.md) for its pinned shared kit 2.1.1 dependency.
+source symlinks as Mondrian and Underground. See [KIT.md](KIT.md) for its pinned shared kit 2.4.1 dependency.
 Normal builds record the dependency revision and modified status in
 `build/kit-build.json`; release checks are unchanged.
 
@@ -132,8 +132,21 @@ for Liam's Time 2; do not allocate a frame cache based solely on these samples.
 
 ## Shared behaviour maintenance
 
-This release uses kit 2.2.0 for shared data and calculations.
+This release uses kit 2.4.1 for shared data and calculations.
 Artwork and explicit render fixtures remain face-owned. Run
 `tools/emulator_smoke.py` with pebble-tool's Python for common runtime checks;
 local emulator/visual checkers retain the face-specific assertions.
 The published 8,000-step-default release is recorded in store/published.json.
+
+## 1.1.0 timezone support
+
+The second-timezone picker now matches Mondrian: search all 597 IANA timezone
+identifiers and aliases by city, region or IANA name, including Mumbai,
+Abu Dhabi and Moscow. Open Display → Find a time zone, choose a result in
+Second time zone, then save. Common choices appear first; filtering and clearing
+search preserve the selected zone. Search text is not saved.
+
+Shared kit 2.4.1 provides offline daylight-saving transitions and half-hour and
+quarter-hour offsets using tzdata 2026f (2020–January 2038). Existing selections,
+goals and face settings survive the upgrade. See [KIT.md](KIT.md) for the exact
+dependency revision and validation, and build/ for the 1.1.0 PBW and provenance.

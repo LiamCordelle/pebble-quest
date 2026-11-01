@@ -14,3 +14,10 @@ shots/emulator-smoke/*
 !shots/emulator-smoke/detail.png
 !shots/emulator-smoke/timeout.png
 !shots/emulator-smoke/fresh-default.png
+
+# Timezone runtime evidence; keep disposable SDK state and logs local.
+shots/emulator-timezones/*
+!shots/emulator-timezones/result.json
+!shots/emulator-timezones/fresh-default.png
+!shots/emulator-timezones/clock-*.png
+shots/emulator-timezones/*-expected*.png
