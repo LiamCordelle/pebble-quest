@@ -1,0 +1,78 @@
+{
+  "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+  "checks": [
+    "Fresh default goal 8000",
+    "Clay save and cold restart retain extended timezone and saved goal 12500",
+    "Live clock pixels match deterministic rendering",
+    "12h and 24h fractional/date boundaries",
+    "Clean exits and no runtime faults"
+  ],
+  "zones": [
+    {
+      "zone": "Asia/Kolkata",
+      "id": 289,
+      "format": 24
+    }
+  ],
+  "report": {
+    "frames": [
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 10
+      },
+      {
+        "view": "face",
+        "wall_ms": 16
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
+      },
+      {
+        "view": "face",
+        "wall_ms": 8
+      },
+      {
+        "view": "face",
+        "wall_ms": 12
+      },
+      {
+        "view": "detail",
+        "wall_ms": 19
+      }
+    ],
+    "clock_discontinuity_candidates": [],
+    "faults": [],
+    "starts": [
+      "2.4.1",
+      "2.4.1"
+    ],
+    "exits": [
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      },
+      {
+        "app": "Quest",
+        "allocated_bytes": 0
+      }
+    ],
+    "weather_acceptances": 1
+  }
+}

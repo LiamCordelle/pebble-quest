@@ -136,7 +136,7 @@ This release uses kit 2.4.1 for shared data and calculations.
 Artwork and explicit render fixtures remain face-owned. Run
 `tools/emulator_smoke.py` with pebble-tool's Python for common runtime checks;
 local emulator/visual checkers retain the face-specific assertions.
-The published 8,000-step-default release is recorded in store/published.json.
+The current published release is recorded in store/published.json.
 
 ## 1.1.0 timezone support
 

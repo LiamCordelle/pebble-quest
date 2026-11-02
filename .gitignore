@@ -21,3 +21,9 @@ shots/emulator-timezones/*
 !shots/emulator-timezones/fresh-default.png
 !shots/emulator-timezones/clock-*.png
 shots/emulator-timezones/*-expected*.png
+
+# Published-artifact runtime evidence; keep recovery state private.
+shots/emulator-publication/*
+!shots/emulator-publication/result.json
+!shots/emulator-publication/fresh-default.png
+!shots/emulator-publication/clock-289-24.png

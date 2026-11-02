@@ -1,0 +1,21 @@
+Appstore auth preflight...
+API base: https://appstore-api.repebble.com
+Developer link check successful.
+Building app...
+App build successful.
+PBW Metadata
+Using PBW: /Users/lcordelle/Documents/pebble/pebble-watchface-agent-skill/pebble-quest/build/pebble-quest.pbw
+PBW app UUID: ae6bc50d-f318-4af3-af69-c65619f4108e
+Name: Quest
+PBW Version: 1.1.0
+Publish Version: 1.1.0
+Platforms: emery
+Resolved existing appstore app ID: 4b8887048b0f4b89a07ed816
+Publishing release to Pebble Appstore...
+Waiting for release upload response [                        ]   0sWaiting for release upload response [=                       ]   0sWaiting for release upload response [==                      ]   0sWaiting for release upload response [===                     ]   1sWaiting for release upload response [====                    ]   1sWaiting for release upload response [========================]   1s
+Release created successfully
+Visit the dashboard to add/edit your changelog: https://appstore-api.repebble.com/dashboard
+App page: https://apps.rePebble.com/4b8887048b0f4b89a07ed816
+
+A new pebble-tool is available: v5.1.2 (current: v5.0.40)
+  Update with: uv tool upgrade pebble-tool

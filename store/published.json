@@ -1,45 +1,198 @@
 {
-  "version": "1.0.3",
+  "version": "1.1.0",
   "app_id": "4b8887048b0f4b89a07ed816",
   "store_url": "https://apps.repebble.com/4b8887048b0f4b89a07ed816",
   "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
   "visible": true,
   "is_published": true,
   "has_pbw": true,
-  "published_date": "2026-10-22T21:27:03.788",
-  "release_notes": "Consistent temperature rounding and handling of unavailable sun times. Shared time, forecast and activity helpers improve consistency across watchfaces. New installations default to an 8,000-step goal; existing saved goals are preserved.",
+  "published_date": "2026-11-01T19:04:00.6",
+  "release_notes": "Search all 597 IANA timezone identifiers by city, region or timezone name, including Mumbai, Abu Dhabi and Moscow. Common choices appear first. Automatic daylight saving and fractional-hour offsets work offline. Existing timezone selections and saved settings are preserved.",
   "gallery_counts": {
     "emery": 2
   },
   "screenshots_unchanged": true,
-  "kit_version": "2.2.0",
-  "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
-  "source_revision": "e6e2dc22df1ed98744c8ba9aaac4ca1025db0635",
-  "local_pbw_sha256": "538a8f51ffe3306f4ba17975bd42c92d635e086eb11d6df043628ccd1395f741",
+  "kit_version": "2.4.1",
+  "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+  "source_revision": "0af291dc3aa588becc82913d084df01cab652c32",
+  "local_pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
   "release_build_provenance": {
-    "created_utc": "2026-10-22T21:26:12.753972+00:00",
+    "created_utc": "2026-11-01T19:02:37.809462+00:00",
     "app": "pebble-quest",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
-    "app_revision": "e6e2dc22df1ed98744c8ba9aaac4ca1025db0635",
+    "app_revision": "0af291dc3aa588becc82913d084df01cab652c32",
     "app_modified": false,
-    "kit_version": "2.2.0",
-    "kit_revision": "c737afcfadf8cdd62dec58941cf8718fed0d6017",
+    "kit_version": "2.4.1",
+    "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
     "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
-    "pbw_sha256": "538a8f51ffe3306f4ba17975bd42c92d635e086eb11d6df043628ccd1395f741",
+    "pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
     "scenario": 3,
     "touch_window_ms": 0,
     "tests_passed": true,
     "renders_checked": true
   },
-  "runtime_default_verification": {
-    "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
-    "fresh_default_goal": 8000,
-    "saved_goal_after_restart": 12500,
-    "synthetic_weather": true,
-    "weather_reply_count": 1,
+  "timezone_data": {
+    "iana_version": "2026f",
+    "identifiers": 597
+  },
+  "runtime_timezone_verification": {
+    "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+    "checks": [
+      "Fresh default goal 8000",
+      "Clay save and cold restart retain extended timezone and saved goal 12500",
+      "Live clock pixels match deterministic rendering",
+      "12h and 24h fractional/date boundaries",
+      "Clean exits and no runtime faults"
+    ],
+    "zones": [
+      {
+        "zone": "Asia/Tokyo",
+        "id": 5,
+        "format": 12
+      },
+      {
+        "zone": "Asia/Kolkata",
+        "id": 289,
+        "format": 24
+      },
+      {
+        "zone": "Asia/Dubai",
+        "id": 268,
+        "format": 24
+      },
+      {
+        "zone": "Europe/Moscow",
+        "id": 463,
+        "format": 24
+      },
+      {
+        "zone": "Asia/Kathmandu",
+        "id": 286,
+        "format": 12
+      },
+      {
+        "zone": "Pacific/Chatham",
+        "id": 533,
+        "format": 12
+      },
+      {
+        "zone": "Pacific/Kiritimati",
+        "id": 548,
+        "format": 24
+      },
+      {
+        "zone": "Zulu",
+        "id": 596,
+        "format": 24
+      }
+    ],
     "report": {
       "frames": [
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 4
+        },
+        {
+          "view": "face",
+          "wall_ms": 11
+        },
+        {
+          "view": "face",
+          "wall_ms": 18
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 18
+        },
+        {
+          "view": "detail",
+          "wall_ms": 14
+        },
+        {
+          "view": "detail",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 14
+        },
+        {
+          "view": "detail",
+          "wall_ms": 16
+        },
+        {
+          "view": "detail",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 13
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        },
+        {
+          "view": "detail",
+          "wall_ms": 14
+        },
+        {
+          "view": "detail",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 19
+        },
+        {
+          "view": "detail",
+          "wall_ms": 15
+        },
+        {
+          "view": "detail",
+          "wall_ms": 8
+        },
         {
           "view": "face",
           "wall_ms": 9
@@ -53,12 +206,12 @@
           "wall_ms": 16
         },
         {
-          "view": "face",
-          "wall_ms": 6
+          "view": "detail",
+          "wall_ms": 17
         },
         {
-          "view": "face",
-          "wall_ms": 5
+          "view": "detail",
+          "wall_ms": 6
         },
         {
           "view": "face",
@@ -66,22 +219,18 @@
         },
         {
           "view": "face",
-          "wall_ms": 6
+          "wall_ms": 5
         },
         {
           "view": "face",
-          "wall_ms": 22
+          "wall_ms": 13
         },
         {
-          "view": "face",
-          "wall_ms": 14
+          "view": "detail",
+          "wall_ms": 18
         },
         {
-          "view": "face",
-          "wall_ms": 7
-        },
-        {
-          "view": "face",
+          "view": "detail",
           "wall_ms": 7
         },
         {
@@ -90,29 +239,75 @@
         },
         {
           "view": "face",
-          "wall_ms": 6
+          "wall_ms": 5
         },
         {
           "view": "face",
-          "wall_ms": 20
+          "wall_ms": 7
         },
         {
           "view": "detail",
-          "wall_ms": 18
+          "wall_ms": 1013
+        },
+        {
+          "view": "detail",
+          "wall_ms": 7
         },
         {
           "view": "face",
-          "wall_ms": 21
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 16
+        },
+        {
+          "view": "detail",
+          "wall_ms": 14
         }
       ],
       "clock_discontinuity_candidates": [],
       "faults": [],
       "starts": [
-        "2.2.0",
-        "2.2.0",
-        "2.2.0"
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1",
+        "2.4.1"
       ],
       "exits": [
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
         {
           "app": "Quest",
           "allocated_bytes": 0
@@ -129,5 +324,72 @@
       "weather_acceptances": 1
     }
   },
-  "verification": "Authenticated store record confirms the expected existing app, visible published version, PBW and retained gallery. Local release hash is unchanged after the publish build."
+  "verification": "Authenticated store record confirms the expected existing app, visible published 1.1.0, PBW and retained gallery. Uploaded PBW hash matches the tested release.",
+  "final_published_artifact_runtime": {
+    "pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
+    "saved_timezone": 289,
+    "saved_timezone_label": "MUM",
+    "saved_goal_after_restart": 12500,
+    "report": {
+      "frames": [
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        },
+        {
+          "view": "face",
+          "wall_ms": 16
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 12
+        },
+        {
+          "view": "detail",
+          "wall_ms": 19
+        }
+      ],
+      "clock_discontinuity_candidates": [],
+      "faults": [],
+      "starts": [
+        "2.4.1",
+        "2.4.1"
+      ],
+      "exits": [
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        }
+      ],
+      "weather_acceptances": 1
+    }
+  }
 }
