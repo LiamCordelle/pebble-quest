@@ -160,6 +160,15 @@
     }
   },
   {
+    "name": "rest-5h53",
+    "scenario": 0,
+    "overrides": {
+      "HOUR": 8,
+      "DRY": 1,
+      "SLEEP": 353
+    }
+  },
+  {
     "name": "no-rain",
     "scenario": 0,
     "overrides": {

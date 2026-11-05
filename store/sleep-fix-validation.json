@@ -1,0 +1,366 @@
+{
+  "created_utc": "2026-11-05T07:59:59.808383+00:00",
+  "app": "pebble-quest",
+  "version": "1.1.1",
+  "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+  "status": "tested_development_candidate; shared kit approved and pushed; release follows",
+  "app_base_revision": "1dad741f24bf0a0b11b3b7ad81dbff960ce8d7ac",
+  "app_modified": true,
+  "initial_kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+  "initial_kit_worktree": "clean",
+  "kit_version": "2.4.2",
+  "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d",
+  "kit_modified": false,
+  "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
+  "latest_fetched_origin_main": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d",
+  "pbw_sha256": "1de45c19f1373d44b91000f9c76ce652d04a9b5e292e9375ad34f4cad2077b6a",
+  "build": {
+    "version": "2.4.2",
+    "revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d",
+    "modified": false,
+    "scenario": 3,
+    "touch_window_ms": 0
+  },
+  "tests": {
+    "shared_native_phone": "passed",
+    "quest_consumer": "passed",
+    "exact_regression": "5h53 + (8h04 / 4) = 7h54 before fix; 5h53 after fix",
+    "isolated_render_scenes": {
+      "mondrian": 200,
+      "underground": 91,
+      "quest": 106
+    },
+    "final_quest_render_scenes": 106
+  },
+  "final_quest_runtime": {
+    "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+    "fresh_default_goal": 8000,
+    "saved_goal_after_restart": 12500,
+    "synthetic_weather": true,
+    "synthetic_sleep_minutes": 353,
+    "weather_reply_count": 1,
+    "report": {
+      "frames": [
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 4
+        },
+        {
+          "view": "face",
+          "wall_ms": 11
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 18
+        },
+        {
+          "view": "face",
+          "wall_ms": 9
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        },
+        {
+          "view": "detail",
+          "wall_ms": 19
+        },
+        {
+          "view": "face",
+          "wall_ms": 19
+        }
+      ],
+      "clock_discontinuity_candidates": [],
+      "faults": [],
+      "starts": [
+        "2.4.2",
+        "2.4.2",
+        "2.4.2"
+      ],
+      "exits": [
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
+        }
+      ],
+      "weather_acceptances": 3
+    },
+    "sleep_text_pixel_match": true,
+    "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d"
+  },
+  "other_runtime_candidates": {
+    "pebble-mondrian": {
+      "uuid": "3bd45600-4ca0-49b6-8129-f840caaf0201",
+      "fresh_default_goal": 8000,
+      "saved_goal_after_restart": 12500,
+      "synthetic_weather": true,
+      "synthetic_sleep_minutes": 353,
+      "weather_reply_count": 1,
+      "report": {
+        "frames": [
+          {
+            "view": "face",
+            "wall_ms": 7
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 5
+          },
+          {
+            "view": "face",
+            "wall_ms": 8
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 5
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 9
+          },
+          {
+            "view": "face",
+            "wall_ms": 7
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 8
+          },
+          {
+            "view": "face",
+            "wall_ms": 12
+          },
+          {
+            "view": "detail",
+            "wall_ms": 9
+          },
+          {
+            "view": "face",
+            "wall_ms": 8
+          }
+        ],
+        "clock_discontinuity_candidates": [],
+        "faults": [],
+        "starts": [
+          "2.4.1",
+          "2.4.1",
+          "2.4.1"
+        ],
+        "exits": [
+          {
+            "app": "Mondrian",
+            "allocated_bytes": 0
+          },
+          {
+            "app": "Mondrian",
+            "allocated_bytes": 0
+          },
+          {
+            "app": "Mondrian",
+            "allocated_bytes": 0
+          }
+        ],
+        "weather_acceptances": 3
+      }
+    },
+    "pebble-underground": {
+      "uuid": "5d63e9ce-c534-49f6-9358-e04a925011c2",
+      "fresh_default_goal": 8000,
+      "saved_goal_after_restart": 12500,
+      "synthetic_weather": true,
+      "synthetic_sleep_minutes": 353,
+      "weather_reply_count": 1,
+      "report": {
+        "frames": [
+          {
+            "view": "face",
+            "wall_ms": 6
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 7
+          },
+          {
+            "view": "face",
+            "wall_ms": 12
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 5
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 11
+          },
+          {
+            "view": "face",
+            "wall_ms": 5
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 3
+          },
+          {
+            "view": "face",
+            "wall_ms": 7
+          },
+          {
+            "view": "face",
+            "wall_ms": 4
+          },
+          {
+            "view": "face",
+            "wall_ms": 7
+          },
+          {
+            "view": "face",
+            "wall_ms": 11
+          },
+          {
+            "view": "detail",
+            "wall_ms": 15
+          },
+          {
+            "view": "face",
+            "wall_ms": 9
+          }
+        ],
+        "clock_discontinuity_candidates": [],
+        "faults": [],
+        "starts": [
+          "2.4.1",
+          "2.4.1",
+          "2.4.1"
+        ],
+        "exits": [
+          {
+            "app": "Undergroun",
+            "allocated_bytes": 0
+          },
+          {
+            "app": "Undergroun",
+            "allocated_bytes": 0
+          },
+          {
+            "app": "Undergroun",
+            "allocated_bytes": 0
+          }
+        ],
+        "weather_acceptances": 3
+      }
+    }
+  },
+  "release_command": "npm run release -- --render",
+  "release_status": "Initial guard refused unpublished kit; explicit user approval received and kit f2ed1e8 pushed to origin/main. Guarded precommit release passed with 106 renders.",
+  "store_publication": "Explicitly authorized; final artifact publication will be recorded in published.json.",
+  "initial_approval_block": "Automatic approval review rejected git push origin main to shared kit because direct default-branch publication requires explicit user authorization.",
+  "kit_shared": true
+}

@@ -15,6 +15,7 @@ for name,env in [
  ('tomorrow-rain-12h',{'HOUR':22,'12H':1,'CROSS_MIDNIGHT':1}),
  ('no-sun',{'NO_SUN':1}),('goal',{'STEPS':18765,'DRY':1}),
  ('high-uv',{'UV':110,'DRY':1}),('rest',{'HOUR':8,'DRY':1}),
+ ('rest-5h53',{'HOUR':8,'DRY':1,'SLEEP':353}),
  ('no-rain',{'DRY':1}),('wide-stats',{'ACTIVE':1440,'DISTANCE':123456,'SLEEP':1439,'HR_MIN':110,'HR_MAX':255,'HR_PARTIAL':1})]:
  scenes.append((name,0,env))
 for kind,code in [('sun',0),('partly',2),('cloud',3),('rain',63),('snow',73),('storm',95),('fog',45)]:

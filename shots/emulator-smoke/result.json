@@ -3,6 +3,7 @@
   "fresh_default_goal": 8000,
   "saved_goal_after_restart": 12500,
   "synthetic_weather": true,
+  "synthetic_sleep_minutes": 353,
   "weather_reply_count": 1,
   "report": {
     "frames": [
@@ -12,19 +13,23 @@
       },
       {
         "view": "face",
-        "wall_ms": 5
+        "wall_ms": 4
       },
       {
         "view": "face",
-        "wall_ms": 16
+        "wall_ms": 11
+      },
+      {
+        "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 5
       },
       {
         "view": "face",
         "wall_ms": 6
-      },
-      {
-        "view": "face",
-        "wall_ms": 5
       },
       {
         "view": "face",
@@ -36,19 +41,7 @@
       },
       {
         "view": "face",
-        "wall_ms": 22
-      },
-      {
-        "view": "face",
-        "wall_ms": 14
-      },
-      {
-        "view": "face",
-        "wall_ms": 7
-      },
-      {
-        "view": "face",
-        "wall_ms": 7
+        "wall_ms": 18
       },
       {
         "view": "face",
@@ -56,27 +49,43 @@
       },
       {
         "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 10
+      },
+      {
+        "view": "face",
         "wall_ms": 6
       },
       {
         "view": "face",
-        "wall_ms": 20
-      },
-      {
-        "view": "detail",
-        "wall_ms": 18
+        "wall_ms": 6
       },
       {
         "view": "face",
-        "wall_ms": 21
+        "wall_ms": 10
+      },
+      {
+        "view": "detail",
+        "wall_ms": 19
+      },
+      {
+        "view": "face",
+        "wall_ms": 19
       }
     ],
     "clock_discontinuity_candidates": [],
     "faults": [],
     "starts": [
-      "2.2.0",
-      "2.2.0",
-      "2.2.0"
+      "2.4.2",
+      "2.4.2",
+      "2.4.2"
     ],
     "exits": [
       {
@@ -92,6 +101,8 @@
         "allocated_bytes": 0
       }
     ],
-    "weather_acceptances": 1
-  }
+    "weather_acceptances": 3
+  },
+  "sleep_text_pixel_match": true,
+  "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d"
 }
