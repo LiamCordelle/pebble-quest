@@ -1,101 +1,102 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "app_id": "4b8887048b0f4b89a07ed816",
   "store_url": "https://apps.repebble.com/4b8887048b0f4b89a07ed816",
   "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
   "visible": true,
   "is_published": true,
   "has_pbw": true,
-  "published_date": "2026-11-01T19:04:00.6",
-  "release_notes": "Search all 597 IANA timezone identifiers by city, region or timezone name, including Mumbai, Abu Dhabi and Moscow. Common choices appear first. Automatic daylight saving and fractional-hour offsets work offline. Existing timezone selections and saved settings are preserved.",
+  "published_date": "2026-11-05T08:07:21.882",
+  "release_notes": "Fix REST showing too much sleep by matching Pebble Health's recorded sleep total. The previous calculation could add part of the previous night's sleep. Sleep corrections refresh within the same minute, and the latest recorded total remains available after midnight. Existing settings and artwork are preserved.",
   "gallery_counts": {
     "emery": 2
   },
   "screenshots_unchanged": true,
-  "kit_version": "2.4.1",
-  "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
-  "source_revision": "0af291dc3aa588becc82913d084df01cab652c32",
-  "local_pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
+  "kit_version": "2.4.2",
+  "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d",
+  "previous_kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+  "source_revision": "d234c3d46f2da4658d6ba1af160a723a8e022086",
+  "local_pbw_sha256": "0ffa44001f065c8f34bf2044518227a00a43e088202bd7632f4fa5c978e66a32",
   "release_build_provenance": {
-    "created_utc": "2026-11-01T19:02:37.809462+00:00",
+    "created_utc": "2026-11-05T08:05:40.337748+00:00",
     "app": "pebble-quest",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
-    "app_revision": "0af291dc3aa588becc82913d084df01cab652c32",
+    "app_revision": "d234c3d46f2da4658d6ba1af160a723a8e022086",
     "app_modified": false,
-    "kit_version": "2.4.1",
-    "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
+    "kit_version": "2.4.2",
+    "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d",
     "kit_repository": "https://github.com/LiamCordelle/pebble-watchface-kit.git",
-    "pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
+    "pbw_sha256": "0ffa44001f065c8f34bf2044518227a00a43e088202bd7632f4fa5c978e66a32",
     "scenario": 3,
     "touch_window_ms": 0,
     "tests_passed": true,
     "renders_checked": true
   },
-  "timezone_data": {
-    "iana_version": "2026f",
-    "identifiers": 597
-  },
-  "runtime_timezone_verification": {
-    "kit_revision": "2dcfa7302bf07aabb9a1f5f0974064b638dd5ac8",
-    "checks": [
-      "Fresh default goal 8000",
-      "Clay save and cold restart retain extended timezone and saved goal 12500",
-      "Live clock pixels match deterministic rendering",
-      "12h and 24h fractional/date boundaries",
-      "Clean exits and no runtime faults"
-    ],
-    "zones": [
-      {
-        "zone": "Asia/Tokyo",
-        "id": 5,
-        "format": 12
-      },
-      {
-        "zone": "Asia/Kolkata",
-        "id": 289,
-        "format": 24
-      },
-      {
-        "zone": "Asia/Dubai",
-        "id": 268,
-        "format": 24
-      },
-      {
-        "zone": "Europe/Moscow",
-        "id": 463,
-        "format": 24
-      },
-      {
-        "zone": "Asia/Kathmandu",
-        "id": 286,
-        "format": 12
-      },
-      {
-        "zone": "Pacific/Chatham",
-        "id": 533,
-        "format": 12
-      },
-      {
-        "zone": "Pacific/Kiritimati",
-        "id": 548,
-        "format": 24
-      },
-      {
-        "zone": "Zulu",
-        "id": 596,
-        "format": 24
-      }
-    ],
+  "final_published_artifact_runtime": {
+    "uuid": "ae6bc50d-f318-4af3-af69-c65619f4108e",
+    "fresh_default_goal": 8000,
+    "saved_goal_after_restart": 12500,
+    "synthetic_weather": true,
+    "synthetic_sleep_minutes": 353,
+    "weather_reply_count": 1,
     "report": {
       "frames": [
         {
           "view": "face",
-          "wall_ms": 9
+          "wall_ms": 11
         },
         {
           "view": "face",
-          "wall_ms": 4
+          "wall_ms": 5
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 13
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 8
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 17
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 6
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
+        },
+        {
+          "view": "face",
+          "wall_ms": 10
+        },
+        {
+          "view": "face",
+          "wall_ms": 7
         },
         {
           "view": "face",
@@ -103,281 +104,23 @@
         },
         {
           "view": "face",
-          "wall_ms": 18
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 18
-        },
-        {
-          "view": "detail",
-          "wall_ms": 14
-        },
-        {
-          "view": "detail",
-          "wall_ms": 6
-        },
-        {
-          "view": "face",
-          "wall_ms": 9
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 14
-        },
-        {
-          "view": "detail",
-          "wall_ms": 16
-        },
-        {
-          "view": "detail",
-          "wall_ms": 6
-        },
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 13
-        },
-        {
-          "view": "face",
-          "wall_ms": 10
-        },
-        {
-          "view": "detail",
-          "wall_ms": 14
-        },
-        {
-          "view": "detail",
-          "wall_ms": 7
-        },
-        {
-          "view": "face",
-          "wall_ms": 9
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 19
-        },
-        {
-          "view": "detail",
-          "wall_ms": 15
-        },
-        {
-          "view": "detail",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 9
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 16
-        },
-        {
-          "view": "detail",
-          "wall_ms": 17
-        },
-        {
-          "view": "detail",
-          "wall_ms": 6
-        },
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 13
-        },
-        {
-          "view": "detail",
-          "wall_ms": 18
-        },
-        {
-          "view": "detail",
-          "wall_ms": 7
-        },
-        {
-          "view": "face",
-          "wall_ms": 9
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 7
-        },
-        {
-          "view": "detail",
-          "wall_ms": 1013
-        },
-        {
-          "view": "detail",
-          "wall_ms": 7
-        },
-        {
-          "view": "face",
-          "wall_ms": 9
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 16
-        },
-        {
-          "view": "detail",
-          "wall_ms": 14
-        }
-      ],
-      "clock_discontinuity_candidates": [],
-      "faults": [],
-      "starts": [
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1",
-        "2.4.1"
-      ],
-      "exits": [
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        },
-        {
-          "app": "Quest",
-          "allocated_bytes": 0
-        }
-      ],
-      "weather_acceptances": 1
-    }
-  },
-  "verification": "Authenticated store record confirms the expected existing app, visible published 1.1.0, PBW and retained gallery. Uploaded PBW hash matches the tested release.",
-  "final_published_artifact_runtime": {
-    "pbw_sha256": "81dca1b7c781720ed7fb81937bcd0e094948bba3ba3585ad6cb399d14af088a2",
-    "saved_timezone": 289,
-    "saved_timezone_label": "MUM",
-    "saved_goal_after_restart": 12500,
-    "report": {
-      "frames": [
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 10
-        },
-        {
-          "view": "face",
-          "wall_ms": 16
-        },
-        {
-          "view": "face",
-          "wall_ms": 6
-        },
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
-          "wall_ms": 5
-        },
-        {
-          "view": "face",
-          "wall_ms": 8
-        },
-        {
-          "view": "face",
           "wall_ms": 12
         },
         {
           "view": "detail",
+          "wall_ms": 10
+        },
+        {
+          "view": "face",
           "wall_ms": 19
         }
       ],
       "clock_discontinuity_candidates": [],
       "faults": [],
       "starts": [
-        "2.4.1",
-        "2.4.1"
+        "2.4.2",
+        "2.4.2",
+        "2.4.2"
       ],
       "exits": [
         {
@@ -387,9 +130,16 @@
         {
           "app": "Quest",
           "allocated_bytes": 0
+        },
+        {
+          "app": "Quest",
+          "allocated_bytes": 0
         }
       ],
-      "weather_acceptances": 1
-    }
-  }
+      "weather_acceptances": 3
+    },
+    "sleep_text_pixel_match": true,
+    "kit_revision": "f2ed1e88d8eb3b9075eab4f2ad8cf0675317081d"
+  },
+  "verification": "Authenticated store record confirms existing Quest app, visible published 1.1.1, PBW and retained gallery. Publish did not change the hash of the final QEMU-tested artifact."
 }

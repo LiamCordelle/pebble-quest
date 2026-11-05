@@ -9,19 +9,7 @@
     "frames": [
       {
         "view": "face",
-        "wall_ms": 9
-      },
-      {
-        "view": "face",
-        "wall_ms": 4
-      },
-      {
-        "view": "face",
         "wall_ms": 11
-      },
-      {
-        "view": "face",
-        "wall_ms": 7
       },
       {
         "view": "face",
@@ -33,23 +21,35 @@
       },
       {
         "view": "face",
+        "wall_ms": 13
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
+      },
+      {
+        "view": "face",
         "wall_ms": 8
       },
       {
         "view": "face",
-        "wall_ms": 6
+        "wall_ms": 7
       },
       {
         "view": "face",
-        "wall_ms": 18
-      },
-      {
-        "view": "face",
-        "wall_ms": 9
+        "wall_ms": 17
       },
       {
         "view": "face",
         "wall_ms": 7
+      },
+      {
+        "view": "face",
+        "wall_ms": 6
       },
       {
         "view": "face",
@@ -61,19 +61,19 @@
       },
       {
         "view": "face",
-        "wall_ms": 6
+        "wall_ms": 7
       },
       {
         "view": "face",
-        "wall_ms": 6
+        "wall_ms": 11
       },
       {
         "view": "face",
-        "wall_ms": 10
+        "wall_ms": 12
       },
       {
         "view": "detail",
-        "wall_ms": 19
+        "wall_ms": 10
       },
       {
         "view": "face",
